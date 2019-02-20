@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 using UXF;
 
 
@@ -174,8 +175,6 @@ public class ColliderDetector : MonoBehaviour {
                     //Quaternion targetRotation = new Quaternion(0, 0, 0, 0);
                     //Instantiate(target, exampleController.targetPosition, targetRotation);
 
-                    //instantiate target
-                    //targetHolderController.InstantiateTarget();
 
                     if (targetReached)
                     {
@@ -185,8 +184,11 @@ public class ColliderDetector : MonoBehaviour {
                     }
                     else
                     {
-                        //Create TARGET
-                        targetHolderController.InstantiateTarget();
+                        if (exampleController.trialInBlock != 1 || exampleController.isInstructionTrial == true)
+                        {
+                            //Create TARGET
+                            targetHolderController.InstantiateTarget();
+                        }
 
                         //enable the tracker script (for the reach to target)
                         trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = true;
@@ -242,8 +244,11 @@ public class ColliderDetector : MonoBehaviour {
                     }
                     else
                     {
-                        //Create TARGET
-                        targetHolderController.InstantiateTarget();
+                        if (exampleController.trialInBlock != 1 || exampleController.isInstructionTrial == true)
+                        {
+                            //Create TARGET
+                            targetHolderController.InstantiateTarget();
+                        }
 
                         //enable the tracker script (for the reach to target)
                         trackerHolderObject.GetComponent<PositionRotationTracker>().enabled = true;

@@ -13,6 +13,7 @@ public class TargetHolderController : MonoBehaviour {
 		
 	}
 
+    // instantiate target --> controlled in PlaneController (for first trial) and collider detector)
     public void InstantiateTarget()
     {
         //the distance to instantiate the target is stored in the z position

@@ -25,8 +25,10 @@ public class ExampleController : MonoBehaviour {
     public PlaneController planeController;
 
     public bool isDoneInstruction = false;
+    public bool isInstructionTrial = false;
     public string trialType = null;
     public float targetYOffset;
+    public int trialInBlock;                                // used in plane controller to instantiate targets for trial 1
 
     List<int> targetList_1 = new List<int>();
     List<int> targetList_2 = new List<int>();
@@ -309,6 +311,17 @@ public class ExampleController : MonoBehaviour {
     public void StartReachTrial(Trial trial)
     {
         //Debug.Log("starting reach trial!");
+        trialInBlock = trial.numberInBlock;
+
+        // set isInstruction trial to true when you need to wait for instruction
+        if (trial.numberInBlock == 1 && Convert.ToBoolean(trial.settings["show_instruction"]))
+        {
+            isInstructionTrial = true;
+        }
+        else
+        {
+            isInstructionTrial = false;
+        }
 
         // Show instructions when required
         // If the trial is the first trial in the block

@@ -5,10 +5,19 @@ using UnityEngine;
 public class PlaneController : MonoBehaviour {
 
     float plane_rot_angle = -45f;
+    public ExampleController exampleController;
+    public TargetHolderController targetHolderController;
 
     public void SetToNone()
     {
         GetComponent<MeshRenderer>().enabled = false;
+
+        // instantiate target on the first trial of each block
+        if (exampleController.trialInBlock == 1 && exampleController.isInstructionTrial == false)
+        {
+            //Create TARGET
+            targetHolderController.InstantiateTarget();
+        }
     }
 
     public void SetToFlat()
@@ -25,6 +34,13 @@ public class PlaneController : MonoBehaviour {
         //    yield return new WaitForSeconds(.02f);
         //}
         transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        // instantiate target on the first trial of each block
+        if (exampleController.trialInBlock == 1 && exampleController.isInstructionTrial == false)
+        {
+            //Create TARGET
+            targetHolderController.InstantiateTarget();
+        }
     }
 
     public IEnumerator SetToTiltOnX()
@@ -41,6 +57,13 @@ public class PlaneController : MonoBehaviour {
             transform.rotation = Quaternion.Euler(r, 0, 0);
             yield return new WaitForSeconds(.02f);
         }
+
+        // instantiate target on the first trial of each block
+        if (exampleController.trialInBlock == 1 && exampleController.isInstructionTrial == false)
+        {
+            //Create TARGET
+            targetHolderController.InstantiateTarget();
+        }
     }
 
     public IEnumerator SetToTiltOnZ()
@@ -56,6 +79,13 @@ public class PlaneController : MonoBehaviour {
 
             transform.rotation = Quaternion.Euler(0, 0, r);
             yield return new WaitForSeconds(.02f);
+        }
+
+        // instantiate target on the first trial of each block
+        if (exampleController.trialInBlock == 1 && exampleController.isInstructionTrial == false)
+        {
+            //Create TARGET
+            targetHolderController.InstantiateTarget();
         }
     }
 }

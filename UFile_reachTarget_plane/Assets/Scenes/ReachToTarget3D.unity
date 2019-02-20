@@ -334,6 +334,7 @@ MonoBehaviour:
   isDoneInstruction: 0
   trialType: 
   targetYOffset: 0
+  trialInBlock: 0
 --- !u!114 &174332711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,6 +496,11 @@ Prefab:
     - target: {fileID: 4682721129192474, guid: cea6706829d07db49b39851ba221405b, type: 2}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95285636826540082, guid: cea6706829d07db49b39851ba221405b,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea6706829d07db49b39851ba221405b, type: 2}
@@ -851,6 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5a1f6edf482074f83f16dc547f2fa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exampleController: {fileID: 174332710}
+  targetHolderController: {fileID: 339582017}
 --- !u!114 &388099980 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114916036141644208, guid: 0a3b6392f04558844bd340e68ced1ff9,
@@ -1731,6 +1739,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4939825465823094, guid: 345d6370cf80aca4e971c8de6b0e69db, type: 2}
       propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 95597652919607874, guid: 345d6370cf80aca4e971c8de6b0e69db,
+        type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

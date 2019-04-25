@@ -1,0 +1,57 @@
+timestamp,log_type,message
+0.02,Warning,"A Canvas named ""[UXF_UI]"" with a render mode of ScreenSpaceOverlay is being used while VR is also enabled. This Canvas will continue to incur a rendering cost but will not be visible while in VR. Is this intentional?"
+4.247655,Log,Loaded: D:\shanaa\repos\unity-reachTarget_VisiblePlane\UFile_reachTarget_plane\data\testing_participant_list.csv
+9.123409,Log,Updating: D:\shanaa\repos\unity-reachTarget_VisiblePlane\UFile_reachTarget_plane\data\testing_participant_list.csv
+9.123409,Exception,Exception: Invalid number of trials supplied
+50.03555,Log,Updating: D:\shanaa\repos\unity-reachTarget_VisiblePlane\UFile_reachTarget_plane\data\testing_participant_list.csv
+50.03555,Log,WARNING: Check your trial settings for target positions and numbers
+50.03555,Log,show instruction = true  expanding
+50.03555,Log,0
+63.67862,Log,0
+67.23376,Log,show instruction = true  expanding
+67.23376,Log,0
+79.40086,Log,0
+81.93432,Log,show instruction = false  doing nothing
+81.93432,Log,0
+87.23445,Log,0
+94.83466,Log,0
+104.3679,Log,0
+108.5346,Log,0
+112.2125,Log,0
+115.6682,Log,show instruction = false  doing nothing
+115.6682,Log,0
+120.8346,Log,0
+123.4125,Log,show instruction = false  doing nothing
+123.4125,Log,0
+125.9015,Log,0
+129.4238,Log,0
+132.2458,Log,0
+134.8125,Log,0
+137.335,Log,0
+139.9239,Log,show instruction = false  doing nothing
+139.9239,Log,0
+142.6129,Log,0
+145.0127,Log,show instruction = false  doing nothing
+145.0127,Log,0
+153.7019,Log,0
+156.8907,Log,0
+159.7243,Log,0
+164.2352,Log,0
+168.6463,Log,0
+172.9911,Log,show instruction = false  doing nothing
+172.9911,Log,0
+181.6908,Log,0
+183.9577,Log,show instruction = false  doing nothing
+183.9577,Log,0
+189.2577,Log,0
+193.4804,Log,0
+200.5135,Log,0
+204.1803,Log,0
+207.5691,Log,0
+210.8026,Log,show instruction = true  expanding
+210.8026,Log,-45
+231.6915,Log,-45
+236.3806,Log,-45
+240.4365,Log,-45
+244.6141,Log,show instruction = false  doing nothing
+244.6141,Log,0
